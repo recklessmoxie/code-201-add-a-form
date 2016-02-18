@@ -11,7 +11,7 @@ function CookieShop(name, minCustomer, maxCustomer, avgCustomer) {
   this.hourlyCookies = [];
   this.dailyCookies = 0;
   shops.push(this);
-
+  console.log();
   this.generateHourly();
   renderStore(tbl, this) ;
 }
@@ -91,7 +91,6 @@ function renderUpdate(shop, min, max, avg) {
   }
   trEl.childNodes[trEl.childNodes.length-1].textContent = shop.dailyCookies;
 }
-
 var pikePlace = new CookieShop('Pike Place', 17, 88, 5.2, 'pike');
 var seaTac = new CookieShop('SeaTac Airport', 6, 44, 1.2, 'seatac');
 var southCenter = new CookieShop('Southcenter Mall', 11, 38, 1.9, 'south');
